@@ -74,13 +74,8 @@ public class Main {
         input.close();
     }
 
-    // ===============================
-    // DATA AWAL
-    // ===============================
-
     public static void isiDataAwal() {
 
-        // Longboard
         daftarPapan.add(
             new Longboard(
                 "LB001",
@@ -146,10 +141,6 @@ public class Main {
         );
     }
 
-    // ===============================
-    // LIHAT DAFTAR PAPAN
-    // ===============================
-
     public static void lihatDaftarPapan() {
 
         System.out.println("\n==============================================================");
@@ -173,10 +164,6 @@ public class Main {
             System.out.println("--------------------------------------------------------------");
         }
     }
-
-    // ===============================
-    // SEWA PAPAN
-    // ===============================
 
     public static void sewaPapan() {
 
@@ -259,10 +246,6 @@ public class Main {
         penyewaan.tampilkanPenyewaan();
     }
 
-    // ===============================
-    // LIHAT DATA PENYEWAAN
-    // ===============================
-
     public static void lihatPenyewaan() {
 
         System.out.println("\n=========================================");
@@ -278,10 +261,6 @@ public class Main {
             penyewaan.tampilkanPenyewaan();
         }
     }
-
-    // ===============================
-    // KEMBALIKAN PAPAN
-    // ===============================
 
     public static void kembalikanPapan() {
 
