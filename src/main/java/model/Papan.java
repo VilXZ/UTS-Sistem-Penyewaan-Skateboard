@@ -48,11 +48,16 @@ public class Papan {
     }
 
     public void tampilkanInfo() {
-        System.out.println("ID          : " + idPapan);
-        System.out.println("Nama        : " + namaPapan);
-        System.out.println("Jenis       : " + jenis);
-        System.out.println("Harga Sewa  : Rp" + hargaSewa);
-        System.out.println("Status      : " + (tersedia ? "Tersedia" : "Disewa"));
+        System.out.println("ID         : " + idPapan);
+        System.out.println("Nama       : " + namaPapan);
+        System.out.println("Jenis      : " + jenis);
+        System.out.println("Harga/Jam  : Rp" + hargaSewa);
+
+        if (tersedia) {
+            System.out.println("Status     : Tersedia");
+        } else {
+            System.out.println("Status     : Disewa");
+        }
     }
 }
 

@@ -15,13 +15,15 @@ public class Penyewaan {
     private int lamaSewa;
     private double totalHarga;
 
-    public Penyewaan(String idPenyewaan, String namaPenyewa, Papan papan, int lamaSewa) {
+    public Penyewaan(String idPenyewaan, String namaPenyewa,
+                     Papan papan, int lamaSewa) {
 
         this.idPenyewaan = idPenyewaan;
         this.namaPenyewa = namaPenyewa;
         this.papan = papan;
         this.lamaSewa = lamaSewa;
-        this.totalHarga = papan.getHargaSewa() * lamaSewa;
+
+        totalHarga = papan.getHargaSewa() * lamaSewa;
 
         papan.setTersedia(false);
     }

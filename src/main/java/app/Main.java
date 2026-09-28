@@ -44,29 +44,23 @@ public class Main {
             pilihan = input.nextInt();
             input.nextLine();
 
-            switch (pilihan) {
-                case 1:
-                    lihatDaftarPapan();
-                    break;
+            if (pilihan == 1) {
+                lihatDaftarPapan();
 
-                case 2:
-                    sewaPapan();
-                    break;
+            } else if (pilihan == 2) {
+                sewaPapan();
 
-                case 3:
-                    lihatPenyewaan();
-                    break;
+            } else if (pilihan == 3) {
+                lihatPenyewaan();
 
-                case 4:
-                    kembalikanPapan();
-                    break;
+            } else if (pilihan == 4) {
+                kembalikanPapan();
 
-                case 5:
-                    System.out.println("\nProgram selesai.");
-                    break;
+            } else if (pilihan == 5) {
+                System.out.println("\nProgram selesai.");
 
-                default:
-                    System.out.println("\nPilihan tidak tersedia.");
+            } else {
+                System.out.println("\nPilihan tidak tersedia.");
             }
 
         } while (pilihan != 5);
@@ -103,7 +97,6 @@ public class Main {
             )
         );
 
-        // Skateboard
         daftarPapan.add(
             new Skateboard(
                 "SK001",
@@ -143,25 +136,20 @@ public class Main {
 
     public static void lihatDaftarPapan() {
 
-        System.out.println("\n==============================================================");
-        System.out.println("                    DAFTAR PAPAN");
-        System.out.println("==============================================================");
+        System.out.println("\n=========================================");
+        System.out.println("           DAFTAR PAPAN");
+        System.out.println("=========================================");
 
         if (daftarPapan.isEmpty()) {
             System.out.println("Belum ada data papan.");
-            return;
-        }
+        } else {
 
-        for (Papan papan : daftarPapan) {
+            for (Papan papan : daftarPapan) {
 
-            System.out.println("ID          : " + papan.getIdPapan());
-            System.out.println("Nama        : " + papan.getNamaPapan());
-            System.out.println("Jenis       : " + papan.getJenis());
-            System.out.println("Harga/Jam   : Rp" + papan.getHargaSewa());
-            System.out.println("Status      : "
-                    + (papan.isTersedia() ? "Tersedia" : "Disewa"));
+                papan.tampilkanInfo();
 
-            System.out.println("--------------------------------------------------------------");
+                System.out.println("-----------------------------------------");
+            }
         }
     }
 
@@ -174,7 +162,7 @@ public class Main {
         System.out.print("Masukkan nama penyewa : ");
         String nama = input.nextLine();
 
-        System.out.println("\nDaftar papan yang tersedia:");
+        System.out.println("\nPapan yang tersedia:");
 
         boolean adaPapan = false;
 
@@ -227,7 +215,7 @@ public class Main {
         input.nextLine();
 
         if (lamaSewa <= 0) {
-            System.out.println("Lama sewa harus lebih dari 0 jam.");
+            System.out.println("Lama sewa harus lebih dari 0.");
             return;
         }
 
@@ -254,11 +242,11 @@ public class Main {
 
         if (daftarPenyewaan.isEmpty()) {
             System.out.println("Belum ada data penyewaan.");
-            return;
-        }
+        } else {
 
-        for (Penyewaan penyewaan : daftarPenyewaan) {
-            penyewaan.tampilkanPenyewaan();
+            for (Penyewaan penyewaan : daftarPenyewaan) {
+                penyewaan.tampilkanPenyewaan();
+            }
         }
     }
 
@@ -310,10 +298,5 @@ public class Main {
         daftarPenyewaan.remove(transaksiDitemukan);
 
         System.out.println("\nPapan berhasil dikembalikan.");
-        System.out.println(
-            "Papan "
-            + transaksiDitemukan.getPapan().getNamaPapan()
-            + " sekarang tersedia."
-        );
     }
 }
