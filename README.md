@@ -72,11 +72,13 @@ Pemanggilannya dilakukan melalui:
 
 <img width="346" height="73" alt="image" src="https://github.com/user-attachments/assets/1750a9bd-28b9-4718-a734-770e94b5faa8" />
 
-##6. Conditioning dan Looping
+## 6. Conditioning dan Looping
 
 Program menggunakan if-else untuk menentukan pilihan menu dan memeriksa kondisi papan.
 
 Contoh:
+
+<img width="521" height="446" alt="image" src="https://github.com/user-attachments/assets/e0133709-507e-4c00-8395-620b3c801f7a" />
 
 Program juga menggunakan looping untuk menjalankan menu dan menampilkan data.
 
