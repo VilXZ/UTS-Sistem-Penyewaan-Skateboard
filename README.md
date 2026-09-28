@@ -10,6 +10,13 @@
 
 Program ini merupakan aplikasi CLI untuk mengelola penyewaan skateboard. Pengguna dapat melihat daftar papan, melakukan penyewaan, melihat data penyewaan, dan mengembalikan papan.
 
+Program memiliki beberapa fitur, yaitu:
+
+* Melihat daftar papan
+* Menyewa papan
+* Melihat data penyewaan
+* Mengembalikan papan
+
 Papan dibagi menjadi dua jenis utama, yaitu **Longboard** dan **Skateboard**.
 
 Jenis Longboard:
@@ -47,7 +54,43 @@ Inheritance diterapkan pada class `Longboard` dan `Skateboard` yang mewarisi cla
 
 Dengan menggunakan `extends`, kedua subclass dapat menggunakan atribut dan method yang terdapat pada class `Papan`.
 
-## 5. Screenshot Program
+## 5. Penerapan Polymorphism
+
+Polymorphism diterapkan menggunakan Method Overriding pada method tampilkanInfo().
+
+Pada class `Longboard`:
+
+<img width="488" height="131" alt="image" src="https://github.com/user-attachments/assets/b58655b0-55e5-4626-9510-152dde83db7f" />
+
+Pada class `Skateboard`:
+
+<img width="479" height="129" alt="image" src="https://github.com/user-attachments/assets/91078c40-f5f3-4671-be98-2eb9d9299122" />
+
+Method tersebut memiliki nama yang sama dengan method pada class Papan, tetapi memiliki implementasi yang berbeda pada masing-masing subclass.
+
+Pemanggilannya dilakukan melalui:
+
+<img width="346" height="73" alt="image" src="https://github.com/user-attachments/assets/1750a9bd-28b9-4718-a734-770e94b5faa8" />
+
+## 6. Conditioning dan Looping
+
+Program menggunakan if-else untuk menentukan pilihan menu dan memeriksa kondisi papan.
+
+Contoh:
+
+<img width="521" height="446" alt="image" src="https://github.com/user-attachments/assets/e0133709-507e-4c00-8395-620b3c801f7a" />
+
+Program juga menggunakan looping untuk menjalankan menu dan menampilkan data.
+
+Contoh `do-while`:
+
+<img width="716" height="854" alt="image" src="https://github.com/user-attachments/assets/187572a1-0493-41fd-b2fb-1afb86cc1d3d" />
+
+Contoh `for`:
+
+<img width="346" height="73" alt="image" src="https://github.com/user-attachments/assets/1750a9bd-28b9-4718-a734-770e94b5faa8" />
+
+## 7. Screenshot Program
 
 ### Menu Utama
 
