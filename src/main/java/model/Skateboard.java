@@ -25,9 +25,9 @@ public class Skateboard extends Papan {
         System.out.println("Harga/Jam  : Rp" + getHargaSewa());
 
         if (isTersedia()) {
-            System.out.println("Status     : Tersedia");
+            System.out.println("Status     : Tersedia ");
         } else {
-            System.out.println("Status     : Disewa");
+            System.out.println("Status     : Disewa ");
         }
     }
 }

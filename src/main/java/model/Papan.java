@@ -54,9 +54,9 @@ public class Papan {
         System.out.println("Harga/Jam  : Rp" + hargaSewa);
 
         if (tersedia) {
-            System.out.println("Status     : Tersedia");
+            System.out.println("Status     : Tersedia ");
         } else {
-            System.out.println("Status     : Disewa");
+            System.out.println("Status     : Disewa ");
         }
     }
 }

@@ -57,10 +57,10 @@ public class Main {
                 kembalikanPapan();
 
             } else if (pilihan == 5) {
-                System.out.println("\nProgram selesai.");
+                System.out.println("\nProgram selesai");
 
             } else {
-                System.out.println("\nPilihan tidak tersedia.");
+                System.out.println("\nPilihan tidak tersedia");
             }
 
         } while (pilihan != 5);

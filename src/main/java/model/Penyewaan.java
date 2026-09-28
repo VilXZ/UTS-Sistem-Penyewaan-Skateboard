@@ -54,7 +54,7 @@ public class Penyewaan {
         System.out.println("Nama Penyewa : " + namaPenyewa);
         System.out.println("Papan        : " + papan.getNamaPapan());
         System.out.println("Jenis        : " + papan.getJenis());
-        System.out.println("Lama Sewa    : " + lamaSewa + " jam");
+        System.out.println("Lama Sewa    : " + lamaSewa + " jam ");
         System.out.println("Harga/Jam    : Rp" + papan.getHargaSewa());
         System.out.println("Total Harga  : Rp" + totalHarga);
         System.out.println("----------------------------------------");
